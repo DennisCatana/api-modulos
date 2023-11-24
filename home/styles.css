@@ -1,0 +1,113 @@
+.container h1 {
+    font-family: "SistemasApiFont", fantasy;
+    font-size: 40px;
+    text-align: center;
+    animation: slideDown 2s;
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+    -webkit-background-clip: text;
+    background-clip: text; /* Propiedad estándar */
+    -webkit-text-fill-color: transparent;
+  }
+  
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.container h1 {
+    font-size: 600%;
+}
+
+.container h1::first-letter {
+    font-size: 175%;
+}
+
+
+.container h1{
+    font-weight: bold;
+}
+
+
+.container h1 {
+    font-style: italic;
+}
+
+.container h1 {
+    text-decoration: underline;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    animation: fadeIn 3s forwards;
+}
+
+.image-container img {
+    width: 23%;
+    border-radius: 5px;
+}
+
+.api-button1 {
+    background-color: rgb(163, 82, 173);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    animation: fadeIn 3s forwards;
+}
+
+.api-button2 {
+    background-color: rgb(163, 82, 173);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 10px 150px;
+    cursor: pointer;
+    border-radius: 50px;
+    animation: fadeIn 3s forwards;
+}
+
+.api-button3{
+    background-color: rgb(163, 82, 173);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
