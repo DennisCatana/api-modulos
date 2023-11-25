@@ -1,0 +1,153 @@
+.container h1 {
+    font-family: "SistemasApiFont", fantasy;
+    font-size: 40px;
+    position: absolute; 
+    top: 1px; 
+    left: 50px; 
+    animation: slideDown 2s;
+    background: linear-gradient(45deg, rgb(110, 102, 102), rgb(172, 157, 157), rgb(163, 163, 240));
+    -webkit-background-clip: text;
+    background-clip: text; /* Propiedad estándar */
+    -webkit-text-fill-color: transparent;
+  }
+  
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.container h1 {
+    font-size: 500%;
+}
+
+.container h1::first-letter {
+    font-size: 175%;
+}
+
+
+.container h1{
+    font-weight: bold;
+}
+
+
+.container h1 {
+    font-style: italic;
+}
+
+.container h1 {
+    text-decoration: underline;
+}
+
+
+.image-container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; 
+    top: 400px; 
+    left: 80px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    animation: fadeIn 3s forwards;
+}
+.image-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; 
+    top: 400px; 
+    left: 500px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    animation: fadeIn 3s forwards;
+}
+.image-container3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; 
+    top: 400px; 
+    left: 900px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    animation: fadeIn 3s forwards;
+}
+
+.image-container1 img {
+    width: 25%;
+    border-radius: 10px;
+}
+.image-container2 img {
+    width: 25%;
+    border-radius: 10px;
+}
+.image-container3 img {
+    width: 25%;
+    border-radius: 10px;
+}
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+
+  
+
+
+.barra-opciones {
+    font-size: 40px;
+    position: absolute; 
+    top: 250px; 
+    left: 60px;
+    display: flex;
+    background: linear-gradient(45deg, rgb(27, 25, 25), rgb(34, 33, 33), rgb(35, 35, 44));
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    animation: fadeIn 3s forwards;
+  }
+
+  
+  
+  .opcion {
+    cursor: pointer;
+    margin-right: 200px;
+  }
+  
+  
+  .integrantes {
+    display: none;
+    position: absolute;
+    top: 50px; 
+    left: 1200px;
+    background: linear-gradient(45deg, rgb(27, 25, 25), rgb(34, 33, 33), rgb(35, 35, 44));
+    padding: 10px;
+    list-style: none;
+    color: white;
+  }
+  
+  .integrantes ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .integrantes li {
+    margin-bottom: 5px;
+  }
+  
+  
