@@ -151,3 +151,104 @@
   }
   
   
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(125deg, rgb(0, 0, 0) 0%, #635959 99%, rgb(0, 0, 0)00%),
+                linear-gradient(to right, #000000 0%, #000000 100%),
+                linear-gradient(125deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 99%, rgb(255, 255, 255) 100%),
+                linear-gradient(to right, #000000 0%, #000000 100%);
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-family: "SistemasApiFont", fantasy;
+    font-size: 40px;
+    animation: slideDown 2s;
+    background: linear-gradient(45deg, rgb(110, 102, 102), rgb(172, 157, 157), rgb(163, 163, 240));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    animation: fadeIn 3s forwards;
+}
+
+.image-container img {
+    width: 27%;
+    border-radius: 10px;
+}
+
+.barra-opciones {
+    font-size: 40px;
+    display: flex;
+    background: linear-gradient(45deg, rgb(27, 25, 25), rgb(34, 33, 33), rgb(35, 35, 44));
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    margin-top: 20px;
+    animation: fadeIn 3s forwards;
+}
+
+
+
+.contacto-info {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 6%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para mayor legibilidad */
+    padding: 20px; /* Agregar espacio alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra para resaltar el contenido */
+}
+
+.contacto-info p {
+    margin-bottom: 0px; /* Agregar espacio entre los párrafos */
+}
+
+.contacto-info a {
+    color: #66ff66; /* Color de enlaces */
+}
+
+.contacto-info a:hover {
+    color: white; /* Cambia el color al pasar el ratón por encima del enlace */
+}
+
+.contacto-info img {
+    margin-left: 5px; /* Agregar espacio a la izquierda de las imágenes */
+}
+
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

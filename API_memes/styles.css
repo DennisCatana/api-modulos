@@ -22,7 +22,7 @@ body{
 }
 
 #memeBtn:hover {
-    tansform: scale(1.2);
+    transform: scale(1.2);
   }
 
 
@@ -61,5 +61,5 @@ body{
   }
   img:hover {
     border-radius: 0px;
-    tansform: scale(1.2);
+    transform: scale(1.2);
   }
