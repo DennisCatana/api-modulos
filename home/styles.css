@@ -207,29 +207,29 @@ h1 {
 .contacto-info {
     text-align: right;
     margin-left: auto;
-    margin-right: 6%;
+    margin-right: 2%;
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para mayor legibilidad */
-    padding: 20px; /* Agregar espacio alrededor del contenido */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra para resaltar el contenido */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
 }
 
 .contacto-info p {
-    margin-bottom: 0px; /* Agregar espacio entre los párrafos */
+    margin-bottom: 0px; 
 }
 
 .contacto-info a {
-    color: #66ff66; /* Color de enlaces */
+    color: #66ff66; 
 }
 
 .contacto-info a:hover {
-    color: white; /* Cambia el color al pasar el ratón por encima del enlace */
+    color: white; 
 }
 
 .contacto-info img {
-    margin-left: 5px; /* Agregar espacio a la izquierda de las imágenes */
+    margin-left: 5px; 
 }
 
 
