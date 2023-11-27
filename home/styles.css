@@ -126,7 +126,9 @@
   
   .opcion {
     cursor: pointer;
+    text-decoration: none;
     margin-right: 200px;
+    color: inherit; 
   }
   
   
