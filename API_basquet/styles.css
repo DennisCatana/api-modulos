@@ -1,42 +1,82 @@
-
 body{
     min-height: 100vh;
-    background: #AED6F1;
-    background-size: cover;
+    background: #f9f3e9;
     color:black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url("Pictures/fondo.png") ;
-    background-size: 50% 60%; 
-    background-repeat: no-repeat;
-    background-position: center center;
-    
-}
-h1{
-    color: white;
-    
+  
 }
 
-#equipo-info{
-    display: none;     
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 5px solid #F6DDCC  ;  
-    border-radius: 15px; 
-    padding: 10px;
-    width: 400px;
-    margin-bottom: 20px;
+.content {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.equipos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     
+    
+}
+h1 {
+    color: #d8630f;
+    text-align: center;
+}
+.vs{
+    padding: 10px;
+    width: auto;
+    height: auto;
+    background-color: #e39157; 
+}
+
+button {
+    background: #d8630f;
+    color: white;
     align-self: center;
 }
 
-#equipo-season {
-    border-top: 2px dotted ;   
-    border-bottom: 2px dotted;                
-    padding: 20px;   
-    color: black;
-    font-weight: bold;  
-    text-align: center;               
+#partido-info {
+    display: none;
+    text-align: center;
+}
+
+#partido-day {
+    font-size: large;
+}
+
+.tarjeta {
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    border: 2px solid #e39157;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 30px;
+    position: relative;
+}
+
+.cuartos{
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+#partido-quarters{
+    display: flex; 
+    flex-wrap: wrap;
+    border:2px solid #e39157 ;
+    align-items: center;
+}
+.quarter-container {
+    padding: 15px;
+    border:2px dotted #e39157 ;
+   margin: 10px;
+   
+}
+
+
+.generador{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
