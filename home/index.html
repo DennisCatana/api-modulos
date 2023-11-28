@@ -1,72 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistemas de API</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 250vh;
-            margin: 10;
-        }
-        body {
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(125deg, rgb(0, 0, 0) 0%, #635959 99%, rgb(0, 0, 0)00%),
-                        linear-gradient(to right, #000000 0%, #000000 100%),
-                        linear-gradient(125deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 99%, rgb(255, 255, 255) 100%),
-                        linear-gradient(to right, #000000 0%, #000000 100%);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>HOME PAGE API</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Sistemas de API</h1>
-        <div class="image-container1">
-            <img src="https://apimeme.com/static/img/logo.png" alt="Primer API" width="27%">
-        </div>
-        <div class="image-container2">
-            <img src="https://cdn-icons-png.flaticon.com/512/3898/3898012.png" alt="Segunda API" width="27%">
-        </div>
-        <div class="image-container3">
-            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202106/3003/oqlJFEt2mo6gg5TXr51h3ZI5.png" alt="Tercera API" width="27%">
-        </div>
-    </div>
+  <header class="LAS API">
+    <nav class="barra">
+      <img src="https://cdn-icons-png.flaticon.com/512/393/393458.png" alt="Logo" class="logo-img">
+      <a href="#inicio"><button>Inicio</button></a>
+      <a href="#api"><button>API</button></a>
+      <a href="#contactos"><button>Contactos</button></a>
+      <a href="#perfiles"><button>Perfiles</button></a>
+    </nav>
+  </header>
 
-    <div class="barra-opciones">
-        <a class="opcion" id="opcion-1" href="../API_memes/index.html">Primera API</a>
-        <a class="opcion" id="opcion-2" href="../API_basquet/index.html">Segunda API</a>
-        <a class="opcion" id="opcion-3" href="../API_palabras/index.html">Tercera API</a>
-        <div class="opcion" id="opcion-4">Contactos</div>
-        <div class="integrantes">
-          <ul>
-            <li>Aguas Jhordy</li>
-            <li>Barrera Melani</li>
-            <li>Dennis Cataña</li>
-            <li>Cocha Iveth</li>
-            <li>Lascano Aldahir</li>
-            <li>Brandon Sandoval</li>
-            <li>Andrew Vilcacundo</li>
-            <li>Villares Washington</li>
-          </ul>
-        </div>
+  <main>
+    <section class="seccion" id="inicio">
+      <img src="https://cdn.pixabay.com/photo/2022/07/21/11/48/fire-7336074_960_720.png" alt="compaíatitulo" class="titulo">
+      <h1 class="titulo-grande">APIS</h1>
+      <p>Con esta introducción presentamos nuestras api en base a nuestra elección:</p>
+  <div class="api-info">
+    <h2>API de Meme</h2>
+    <p>
+      Las APIs de meme ofrecen acceso a una amplia gama de imágenes y memes virales. 
+      Son utilizadas para integrar contenido humorístico y entretenido en aplicaciones o sitios web.
+    </p>
+
+    <h2>API de Diccionario</h2>
+    <p>
+      Las APIs de diccionario proporcionan acceso a definiciones, sinónimos y más detalles 
+      sobre palabras en varios idiomas. Son útiles para la creación de aplicaciones educativas 
+      o herramientas de consulta de palabras.
+    </p>
+
+    <h2>API de NBA</h2>
+    <p>
+      Las APIs de la NBA brindan información actualizada sobre equipos, jugadores, estadísticas 
+      y partidos de la liga de baloncesto. Son usadas para desarrollar aplicaciones o sitios 
+      web relacionados con el baloncesto y la NBA.
+    </p>
+  </div>
+    </section>
+
+    <section class="seccion" id="api">
+      <div class="cajones">
+        <section class="seccion" id="api">
+          <div class="cajones">
+            <button class="boton-api">
+              <img src="https://images-apilist-fun.sfo2.cdn.digitaloceanspaces.com/api_meme_api.png" alt="API 1">
+              MEME API
+            </button>
+            <button class="boton-api">
+              <img src="https://cdn-icons-png.flaticon.com/512/917/917219.png" alt="API 2">
+              DICTIONARY API
+            </button>
+            <button class="boton-api">
+              <img src="https://gopostr.s3.amazonaws.com/favicon_url/u0HE09nFEMN0JP194HSYpsXldczT8TbalQ8AL9fv.png" alt="API 3">
+              NBA API
+            </button>
+          </div>
+        </section>        
       </div>
-
-
-<div class="contacto-info" style="margin-left: auto;">
-    <p>Número de teléfono: 096 884 6786</p>
-    <p>Github: <a href="https://github.com/DennisCatana">https://github.com/DennisCatana</a><img src="github.png" alt="GitHub Logo" width="100" height="50"></p>
+    </section>
     
-    <p>Facebook: <a href="https://www.facebook.com/dennisjoel.catana">https://www.facebook.com/dennisjoel.catana</a><img src="fb.png" alt="Facebook Logo" width="50" height="50"></p>
-    
-</div>
 
-      <script src="scripts.js"></script>
+    <section class="seccion" id="contactos">
+      <div class="redes">
+        <button><img src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-facebook-512.png" alt="Facebook"></button>
+        <button><img src="https://cdn-icons-png.flaticon.com/512/1944/1944502.png" alt="WhatsApp"></button>
+        <button><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></button>
+      </div>
+    </section>
+  </main>
 
+  <script src="scripts.js"></script>
 </body>
 </html>
