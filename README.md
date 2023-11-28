@@ -1,6 +1,6 @@
 # DESARROLLO DE APLICACIÓN WEB PARA EL CONSUMO DE APIs
-**GAMA DE COLORES**
-La gama de colores que se usará en el proyecto se detalla a continuación :
+**GAMA DE COLORES** <br>
+_La gama de colores que se usará en el proyecto se detalla a continuación :_
 
  •	**De fondo principal de la página se usará beige:**<br>
 ![WhatsApp Image 2023-11-28 at 09 44 25](https://github.com/DennisCatana/api-modulos/assets/117743538/b12aef93-f548-4937-af01-7def044f5d8b)
