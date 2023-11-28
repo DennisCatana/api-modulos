@@ -14,6 +14,7 @@ _La gama de colores que se usará en el proyecto se detalla a continuación :_
 **RESULTADO DE LA APLICACION WEB - API** <br>
 
 _INCIO DE LA PAGINA_ <br>
+_Se puede  visualizar una breve descripciòn de que se trata cada API._ <br>
 ![WhatsApp Image 2023-11-28 at 12 36 52](https://github.com/DennisCatana/api-modulos/assets/117743538/bc6ab7ac-2e96-4af2-b0b3-e47205c2f20a)
 <br>
 
