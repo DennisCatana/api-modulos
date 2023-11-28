@@ -1,32 +1,62 @@
-const consultarEquipo = () => {
-    const randomTeamId = Math.floor(Math.random() * 30) + 1; // Genera un ID de equipo aleatorio
-    fetch(`https://www.balldontlie.io/api/v1/games/${randomTeamId}`)
+const consultarPartido = () => {
+    // Genera una fecha aleatoria en el formato YYYY-MM-DD
+    const randomDate = generateRandomDate();
+
+    // URL de la API
+    const apiUrl = `https://api.sportsdata.io/v3/nba/scores/json/GamesByDate/${randomDate}?key=3df70228e29d452591b17fe7efa735e9`;
+
+    // Hacer la solicitud a la API
+    fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            mostrarEquipo(data);
+            mostrarPartido(data);
         })
         .catch(error => {
             console.log(error);
         });
 };
 
-const btnGenerarEquipo = () => {
-    consultarEquipo();
-    document.getElementById("equipo-info").style.display = "block";
+const btnGenerarPartido = () => {
+    consultarPartido();
+    document.getElementById("partido-info").style.display = "block";
 };
 
-const mostrarEquipo = (data) => {
-    const homeTeam = data.home_team;
-    const visitorTeam = data.visitor_team;
+const mostrarPartido = (data) => {
+    const game = data[0]; // Suponiendo que obtendrás información sobre un solo juego
 
-    document.getElementById("equipo-nombre").innerHTML = `Equipo Local: ${homeTeam.full_name}`;
-    document.getElementById("equipo-abbreviatura").innerHTML = `Nickname: ${homeTeam.abbreviation}`;
-    document.getElementById("equipo-season").innerHTML = `Temporada: ${data.season}`;
+    document.getElementById("partido-season").innerHTML = `Temporada: ${game.Season}`;
+    document.getElementById("partido-day").innerHTML = `Dia: ${game.Day}`;
+    document.getElementById("partido-away-team").innerHTML = `Equipo Visitante: ${game.AwayTeam}`;
+    document.getElementById("partido-away-score").innerHTML = `Visitante Score: ${game.AwayTeamScore}`;
+    document.getElementById("partido-home-team").innerHTML = `Equipo Anfitrion: ${game.HomeTeam}`;
+    document.getElementById("partido-home-score").innerHTML = `Anfitrion Score: ${game.HomeTeamScore}`;
 
-    document.getElementById("equipo-home-score").innerHTML = `Puntuación : ${data.home_team_score}`;
-    document.getElementById("equipo-visitor-nombre").innerHTML = `Equipo Visitante: ${visitorTeam.full_name}`;
-    document.getElementById("equipo-visitor-abbreviatura").innerHTML = `Nickname: ${visitorTeam.abbreviation}`;
-    document.getElementById("equipo-visitor-score").innerHTML = `Puntuación: ${data.visitor_team_score}`;
+    // Mostrar información de los cuartos
+    const quartersContainer = document.getElementById("partido-quarters");
+    quartersContainer.innerHTML = ''; // Limpiar contenido anterior
 
-    
+    game.Quarters.forEach((quarter, index) => {
+        const quarterHtml = `
+          <div class="quarter-container">
+            <h3>Quarter ${index + 1}</h3>
+            <p>Quarter Number: ${quarter.Number}</p>
+            <p>Visitante Score: ${quarter.AwayScore}</p>
+            <p>Anfitrion Score: ${quarter.HomeScore}</p>
+          </div>
+        `;
+        quartersContainer.innerHTML += quarterHtml;
+    });
 };
+
+
+// Función para generar una fecha aleatoria en el formato YYYY-MM-DD
+const generateRandomDate = () => {
+    const startDate = new Date(2022, 0, 1); // Ajusta la fecha de inicio según tus necesidades
+    const endDate = new Date();
+    const randomDate = new Date(startDate.getTime() + Math.random() * (endDate.getTime() - startDate.getTime()));
+    const year = randomDate.getFullYear();
+    const month = String(randomDate.getMonth() + 1).padStart(2, '0');
+    const day = String(randomDate.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+};
+

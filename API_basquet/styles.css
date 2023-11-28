@@ -1,42 +1,100 @@
 
 body{
     min-height: 100vh;
-    background: #AED6F1;
-    background-size: cover;
+    background: #f9f3e9;
     color:black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*
+.content{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    color:#d8630f;
+    text-align: center;
+    
+}
+button{
+    background:#d8630f;
+    color: white;
+}
+#partido-info{
+    display:none;
+} 
+#partido-day{
+    align-self: center;
+    font-size:large;
+}
+.tarjeta{
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    border: 2px solid #e39157  ;  
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.5);
+}
+.quarter-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+*/
+
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-image: url("Pictures/fondo.png") ;
-    background-size: 50% 60%; 
-    background-repeat: no-repeat;
-    background-position: center center;
+    text-align: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+.equipos{
+    display: flex;
     
 }
-h1{
-    color: white;
-    
+h1 {
+    color: #d8630f;
+    text-align: center;
 }
 
-#equipo-info{
-    display: none;     
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 5px solid #F6DDCC  ;  
-    border-radius: 15px; 
-    padding: 10px;
-    width: 400px;
-    margin-bottom: 20px;
-    
+button {
+    background: #d8630f;
+    color: white;
     align-self: center;
 }
 
-#equipo-season {
-    border-top: 2px dotted ;   
-    border-bottom: 2px dotted;                
-    padding: 20px;   
-    color: black;
-    font-weight: bold;  
-    text-align: center;               
+#partido-info {
+    display: none;
+    text-align: center;
+}
+
+#partido-day {
+    font-size: large;
+}
+
+.tarjeta {
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    border: 2px solid #e39157;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 30px;
+    position: relative;
+}
+
+.cuartos{
+    justify-content: space-between; /* Otras opciones: space-around, space-evenly, flex-start, flex-end */
+    flex-wrap: wrap;
+}
+
+.quarter-container {
+    padding: 10px;
+   
 }
