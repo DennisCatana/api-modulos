@@ -1,65 +1,33 @@
-
 body{
     min-height: 100vh;
     background: #f9f3e9;
     color:black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
 }
-/*
-.content{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    text-align: center;
-}
-
-h1{
-    color:#d8630f;
-    text-align: center;
-    
-}
-button{
-    background:#d8630f;
-    color: white;
-}
-#partido-info{
-    display:none;
-} 
-#partido-day{
-    align-self: center;
-    font-size:large;
-}
-.tarjeta{
-    text-align: center;
-    padding: 10px;
-    width: auto;
-    height: auto;
-    border: 2px solid #e39157  ;  
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.5);
-}
-.quarter-container {
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-
-*/
 
 .content {
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    margin-top: 20px; /* Ajusta según sea necesario */
 }
 .equipos{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 h1 {
     color: #d8630f;
     text-align: center;
+}
+.vs{
+    padding: 10px;
+    width: auto;
+    height: auto;
+    background-color: #e39157; 
 }
 
 button {
@@ -90,11 +58,25 @@ button {
 }
 
 .cuartos{
-    justify-content: space-between; /* Otras opciones: space-around, space-evenly, flex-start, flex-end */
+    justify-content: space-between; 
     flex-wrap: wrap;
 }
-
+#partido-quarters{
+    display: flex; 
+    flex-wrap: wrap;
+    border:2px solid #e39157 ;
+    align-items: center;
+}
 .quarter-container {
-    padding: 10px;
+    padding: 15px;
+    border:2px dotted #e39157 ;
+   margin: 10px;
    
+}
+
+
+.generador{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
