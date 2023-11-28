@@ -1,5 +1,5 @@
 async function searchWord() {
-    var searchInput = document.getElementById('searchWord').value;
+    let searchInput = document.getElementById('searchWord').value;
 
     if (!searchInput) {
         showErrorAlert('Please enter a word..');
@@ -47,29 +47,29 @@ function showErrorAlert(message) {
 }
 
 function displayWordDetails(wordDetails) {
-    var wordDetailsContainer = document.getElementById('wordDetails');
+    let wordDetailsContainer = document.getElementById('wordDetails');
     wordDetailsContainer.innerHTML = ''; 
 
-    var card = document.createElement('div');
+    let card = document.createElement('div');
     card.className = 'card';
 
-    var cardBody = document.createElement('div');
+    let cardBody = document.createElement('div');
     cardBody.className = 'card-body';
 
-    var cardTitle = document.createElement('h5');
+    let cardTitle = document.createElement('h5');
     cardTitle.className = 'card-title';
     cardTitle.innerText = `Word: ${wordDetails.word}`;
 
-    var pronunciationsList = document.createElement('ul');
+    let pronunciationsList = document.createElement('ul');
     pronunciationsList.className = 'list-group list-group-flush';
 
     for (const phonetic of wordDetails.phonetics) {
-        var pronunciationItem = document.createElement('li');
+        let pronunciationItem = document.createElement('li');
         pronunciationItem.className = 'list-group-item pronunciation-item';
         pronunciationItem.innerHTML = `<strong>Phonetics:</strong> ${phonetic.text}`;
         
         if (phonetic.audio) {
-            var audioElement = document.createElement('audio');
+            let audioElement = document.createElement('audio');
             audioElement.controls = true;
             audioElement.innerHTML = `<source src="${phonetic.audio}" type="audio/mpeg">Your browser does not support the audio element.`;
             pronunciationItem.appendChild(audioElement);
@@ -78,26 +78,26 @@ function displayWordDetails(wordDetails) {
         pronunciationsList.appendChild(pronunciationItem);
     }
 
-    var originInfo = document.createElement('div');
+    let originInfo = document.createElement('div');
     originInfo.className = 'mt-4';
     originInfo.innerHTML = `<h5>Origin</h5><p>${wordDetails.origin}</p>`;
 
-    var meaningsList = document.createElement('div');
+    let meaningsList = document.createElement('div');
     meaningsList.className = 'mt-4';
     meaningsList.innerHTML = `<h5>Meanings</h5>`;
 
     for (const meaning of wordDetails.meanings) {
-        var meaningItem = document.createElement('div');
+        let meaningItem = document.createElement('div');
         meaningItem.className = 'card mb-3';
 
-        var meaningCardBody = document.createElement('div');
+        let meaningCardBody = document.createElement('div');
         meaningCardBody.className = 'card-body';
 
-        var partOfSpeechTitle = document.createElement('h6');
+        let partOfSpeechTitle = document.createElement('h6');
         partOfSpeechTitle.className = 'mb-2';
         partOfSpeechTitle.innerText = `${meaning.partOfSpeech}`;
 
-        var definitionInfo = document.createElement('p');
+        let definitionInfo = document.createElement('p');
         definitionInfo.innerHTML = `<strong>Definición:</strong> ${meaning.definitions[0].definition}<br>`;
         definitionInfo.innerHTML += `<strong>Ejemplo:</strong> ${meaning.definitions[0].example}`;
 
