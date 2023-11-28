@@ -47,3 +47,13 @@ body {
 .pronunciation-item audio {
     margin-top: 5px;
 }
+
+button{
+    background-color: orange;
+    color: white; /* Letras en blanco */
+    /* Opcional: Añade más estilos según tus preferencias */
+    padding: 10px 20px; /* Ajusta el espaciado interno del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Añade bordes redondeados */
+
+}
