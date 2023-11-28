@@ -37,5 +37,7 @@ _PERFILES_ <br>
 _Informaciòn de las persoans que trabajaron en este proyecto._ <br>
 ![WhatsApp Image 2023-11-28 at 12 38 26](https://github.com/DennisCatana/api-modulos/assets/117743538/5eaf284e-41b9-438b-ab67-05dd4077a3d7)
 
+CAPTURA COMPLETA <br>
+![image](https://github.com/DennisCatana/api-modulos/assets/117743091/378acc6f-682b-439c-ad95-d5eb05e7df05)
 
 
