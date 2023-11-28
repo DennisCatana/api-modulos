@@ -179,3 +179,8 @@ p {
   line-height: 1.5;
   color: #000000;
 }
+
+.contact-title {
+  color: #333;
+  font-size: 70px;
+}
